@@ -1,7 +1,8 @@
 x = 10; 
 y = 15
-print(x + y)
+print("this is "+str(x + y))
 print(x)
+print(f'this is {x}')
 # This is a single line comment
 '''
 This 
@@ -18,6 +19,12 @@ elif x==y:
 else:
     print('y is smaller')
 
+if x >=5:
+    print("ex")
+elif x >=3 and x<=4:
+    print("good")
+elif x >= 2 and x<=2.99:
+    print ("bad")
 # function In Python 
 def function_name():
     print(x)
@@ -54,6 +61,9 @@ print(mylist5)
 mylist3.sort()
 # mylist4.sort() # TypeError: '<' not supported between instances of 'str' and 'int'
 # mylist3.sort(reverse=True)
+print(f'This is list3 : {mylist3}')
+# insert()
+mylist3.insert(1, 'ahmed')
 print(mylist3)
 # reverse()
 mylist3 = [-1, 1, 4, 5, 6, 'ahmed', True, False]
@@ -107,7 +117,11 @@ print(z)
 
 # Set
 myset1 = {1,'ahmed', 'sara', 1, True, 1}
+myset2 = {'one', 'two', 'three'}
+myset3 = {1,2,3,4}
 print(myset1)
+# print(myset2 | myset3)
+print(myset2.union(myset3))
 # myset2 = {'ahmed', 'sara', 1, [1, 2, 3]}
 # print(myset2) #TypeError: unhashable type: 'list'
 
@@ -115,3 +129,20 @@ b = (1,2,3,4,5,6)
 print('The position of index is: {:d}'.format(b.index(4)))
 print(f'The position of index is: {b.index(4)}')
 
+# Dictionary
+mydict1 = {
+        'name':'ahmed',
+        'age': 25,
+        'grade': 'A',
+        (1,2): 'tuple',
+        'name':'sara'
+}
+print(mydict1)
+print(mydict1['name'])
+print(mydict1.keys())
+print(mydict1.values())
+# range()
+print(range(10))
+for i in range(10):
+    print(i)
+# print(dir(int))
