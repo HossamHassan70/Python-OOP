@@ -154,7 +154,8 @@ print(z)
 # ================================
 # Set
 # 1. Set Items Are Unordered, Not Indexed, No Slice
-# 2. Set Items Are Immutable data type (Numbers, Strings, Tuples) List and dict are NOT
+# 2. Set Items Are Mutable But it has only Immutable data type (Numbers, Strings, Tuples) List and dict are NOT
+# A set itself may be modified, but the elements contained in the set must be of an immutable type.
 # 3. Set Items Are Unique (No Duplicate Values)
 # 4. Set Items Are Enclosed in Curly Braces {}
 # 5. Set can have any data type
