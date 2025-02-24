@@ -48,7 +48,7 @@ function_name()
 mylist1 = ['ahemd', 'sara', 1, True, 1]
 print(mylist1) 
 print(mylist1[0]) # ahemd
-# print(mylist1[4]) # Error out of range
+# print(mylist1[45]) # Error out of range
 print(mylist1[-1]) # 1
 print(mylist1[1:3]) # ['sara', 1] last index not included
 print(mylist1[1:4:1]) # ['sara', 1, True] 
