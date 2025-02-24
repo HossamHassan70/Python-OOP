@@ -11,7 +11,11 @@ class Car: # class is a blueprint for creating objects
         Car.no_of_obj += 1 # Keep track number of created objects 
     def get_brand_and_speed(self): # Instance Method
         print(f"My brand is {self.name} and my speed is {self.speed}")
-    
+        
+    @staticmethod # Decorator to define a static method
+    def get_class_name(): # Static Method (No need to pass self or cls)
+        return "This is a Car class"
+
     @classmethod
     def get_no_of_objects(cls): # Class Method
         return f"Total number of Car objects created: {cls.no_of_obj}"
