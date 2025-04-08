@@ -36,7 +36,14 @@ class Patron:
 
 
 book1 = Book('Mission Impossible', 'Taha Hussin')
+book2 = Book('Atomic Habit', 'Jems Clear')
 patron1 = Patron('Abduelrahman')
+patron2 = Patron('Ehab')
 
 print(patron1.borrow_book(book1))  # Output: Abduelrahman Borrowed Mission Impossible
-print(patron1.return_book(book1)) # Output: Abduelrahman returned 'Mission Impossible'.
+print(patron2.borrow_book(book1)) # Output: Mission Impossible is not available
+print(patron1.return_book(book1)) # Output: Abduelrahman returned 'Mission Impossible'
+print(patron2.borrow_book(book1)) # Output: Ehab Borrowed "Mission Impossible"
+print(patron2.borrow_book(book2)) # Output: Ehab Borrowed "Atomic Habit"
+print(patron1.borrow_book(book2)) # Output: Atomic Habit is not available
+print(patron1.return_book(book2)) # Output: Abduelrahman does not have 'Atomic Habit'
