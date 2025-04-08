@@ -4,7 +4,9 @@ y,f,g = 15,10,7 # multiple assignment
 y = x = 4 # assign the same value to multiple variables
 print("this is "+str(x + y)) # convert int to string using str()
 print(x)
+print(type(x))
 print(f'this is {x}') 
+print('this is {:d}'.format(x)) 
 # This is a single line comment
 '''
 This 
@@ -182,7 +184,7 @@ mydict1 = {
         (1,2): 'tuple',
         'name':'sara' # duplicate key (the last value will be saved)
 }
-print(mydict1) 
+print(f'This is my Dict1{mydict1}') 
 print(mydict1['name']) # sara
 print(mydict1.keys()) # dict_keys(['name', 'age', 'grade', (1, 2)])
 print(mydict1.values()) # dict_values(['sara', 25, 'A', 'tuple'])

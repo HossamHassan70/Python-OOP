@@ -31,6 +31,8 @@ print(person.get_name())  # Output: John
 print(person.get_age())   # Output: 30
 person.set_age(31)
 print(person.get_age())   # Output: 31
+# person.set_name(1)
+# print(person.get_name())  # Output: ValueError: Invalid name
 
 # Protected Members
 '''

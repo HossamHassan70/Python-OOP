@@ -78,3 +78,17 @@ class C(A):
 # Inheritance helps in creating a well-structured and organized 
 # codebase by promoting code reuse and establishing relationships 
 # between classes.
+class Parent:
+    def __init__(self, text):
+        self.text = text
+    
+    def say_hello(self):
+        print(self.text)
+
+class Child(Parent):
+    def __init__(self, any):
+        super().__init__(any)
+        
+
+obj = Child('Hello Python')
+obj.say_hello()
